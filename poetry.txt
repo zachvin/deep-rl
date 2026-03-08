@@ -1,0 +1,17 @@
+CREATING A PROJECT
+poetry init
+poetry new [name]
+
+ADDING REQUIREMENTS.TXT
+cat requirements.txt | xargs poetry add
+
+ACTIVATING ENVIRONMENT
+eval $(poetry env activate)
+
+INSTALLING DEPENDENCIES
+poetry install
+
+COMMITTING CHANGES
+Remember to commit poetry.lock file to use for installing.
+poetry.lock will install automatically with poetry install if it exists.
+poetry.lock maintains single library versions for everything in pyproject.toml so future updates to individual dependencies don't break the project.
