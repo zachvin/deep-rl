@@ -15,3 +15,11 @@ COMMITTING CHANGES
 Remember to commit poetry.lock file to use for installing.
 poetry.lock will install automatically with poetry install if it exists.
 poetry.lock maintains single library versions for everything in pyproject.toml so future updates to individual dependencies don't break the project.
+
+
+PYENV
+pyenv versions
+pyenv install -l
+pyenv install 3.11
+pyenv local 3.11
+pyenv prefix
